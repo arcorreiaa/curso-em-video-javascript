@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde Vive?</title>
+</head>
+<body>
+    <h1>País onde vive</h1>
+    Digite o nome do lugar: <input type="text" name="Pais" id="Pais"> 
+
+    <input type="submit" onclick="verificar()"  value="confirmar">
+    <div id="valorDigitado">
+
+    </div>
+    <script>
+           var verificando = "";
+       function verificar(){
+
+           verificando = document.getElementById('valor').value;
+           document.getElementById('valorDigitado').innerHTML = verificando;
+       }
+    </script>
+</body>
+</html>
